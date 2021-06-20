@@ -1,7 +1,8 @@
 ﻿<Properties GitUserInfo="UsingGIT" StartupConfiguration="{C5A48AE6-358C-40BB-8D89-85293F440395}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="src/GradeBook/Program.cs" Line="16" Column="1" />
+      <File FileName="src/GradeBook/Program.cs" Line="29" Column="67" />
+      <File FileName="src/GradeBook/Book.cs" Line="120" Column="34" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
