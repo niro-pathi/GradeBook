@@ -10,7 +10,7 @@ namespace GradeBook.Tests
         {
             //arrange
             var book = new Book("");
-            book.AddLetterGrade('B');
+            book.AddGrade('B');
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);

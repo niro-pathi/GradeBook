@@ -27,10 +27,10 @@ namespace GradeBook.Tests
         [Fact]
         public void CSharpIsPassByRef()
         {
-            var book1 = GetBook("book 1");
-            GetBookSetName(ref book1, "New Name");
+            var book1 = GetBook("BOOK 1");
+            GetBookSetName(ref book1, "NEW NAME");
 
-            Assert.Equal("New Name", book1.Name);
+            Assert.Equal("NEW NAME", book1.Name);
 
         }
 
@@ -43,10 +43,10 @@ namespace GradeBook.Tests
         [Fact]
         public void CSharpIsPassByValue()
         {
-            var book1 = GetBook("book 1");
+            var book1 = GetBook("BOOK 1");
             GetBookSetName(book1, "New Name");
 
-            Assert.Equal("book 1", book1.Name);
+            Assert.Equal("BOOK 1", book1.Name);
 
         }
 
@@ -59,10 +59,10 @@ namespace GradeBook.Tests
         [Fact]
         public void CanSetNameFromReference()
         {
-            var book1 = GetBook("book 1");
-            SetName(book1, "New Name");
+            var book1 = GetBook("BOOK 1");
+            SetName(book1, "NEW NAME");
 
-            Assert.Equal("New Name", book1.Name);
+            Assert.Equal("NEW NAME", book1.Name);
           
         }
 
@@ -74,11 +74,11 @@ namespace GradeBook.Tests
         [Fact]
         public void GetBookReturnsDifferentObjects()
         {
-           var book1 = GetBook("book 1");
-           var book2 = GetBook("book 2");
+           var book1 = GetBook("BOOK 1");
+           var book2 = GetBook("BOOK 2");
 
-            Assert.Equal("book 1", book1.Name);
-            Assert.Equal("book 2", book2.Name);
+            Assert.Equal("BOOK 1", book1.Name);
+            Assert.Equal("BOOK 2", book2.Name);
             Assert.NotSame(book1, book2);
        
         }
@@ -86,7 +86,7 @@ namespace GradeBook.Tests
         [Fact]
         public void TwoVariablesCanReferenceSameObject()
         {
-            var book1 = GetBook("book 1");
+            var book1 = GetBook("BOOK 1");
             var book2 = book1;
 
             Assert.Same(book1, book2);
